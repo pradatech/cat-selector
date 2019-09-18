@@ -1,0 +1,121 @@
+body {
+    
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url("cats.jpg");
+    background-position:center;
+    background-repeat:repeat-x;
+    background-attachment: fixed;
+}
+
+
+nav {
+    height: 50px;
+    background-color:rgba(173, 36, 36, 0.63);
+    
+}
+
+nav li {
+    display:inline;
+    line-height:50px;
+    padding:20px;
+    margin: 20px;
+    
+}
+header{
+    padding:10px;
+    }
+
+#tag-line{
+    font-style: italic;
+}
+
+
+h1{
+    font-size:3em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+
+p{
+    color:white;
+    text-shadow: 0.5px 0.5px black;
+}
+
+.footer{
+    color:black;
+}
+
+
+.question input[type='radio']{
+margin:10px;
+}
+
+#submit-button{
+    margin-top:20px;
+}
+
+
+#start-button{
+    width:80px;
+    }
+
+#start-button:hover{
+    text-transform: uppercase;
+}    
+
+.hidden {
+    visibility: hidden;
+}
+
+form{
+    padding:20px;
+}
+
+#footer {
+    position: relative;
+    bottom:0px;
+    padding:10px;
+    padding-top:50px;
+    margin-top:20px;
+    
+}
+
+#AKC{
+    width:300px;
+    vertical-align: middle;
+}
+
+#greeting{
+    padding:50px;
+}
+
+.btn{
+    background-color:rgba(173, 36, 36, 0.63);
+    color:white;
+}
+
+.btn:hover {
+    background-color:#61efff;
+    transform: scale(1.1);
+    
+}
+.btn:active{
+    transform: scale(1.2);
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+}
+li a:hover {
+   color:#00b56d;
+}
+
+a {
+    color:blue;
+}
+
+a:hover {
+    color: rgba(123, 9, 138, 0.842)
+}
