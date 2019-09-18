@@ -39,13 +39,16 @@ return points;
     }
  
 
-//1st git commit
+//1st git commit                      Breed                Size     Active YES/no, INSIDE/OUTDOOR/BOTH,    hair length
 
     var americanShorthair = new cat ('American Shorthair','small', 'yes', 'both', 'medium' );
     var americanShorthair = americanShorthair.calculatePoints();
  
     var bengal = new cat ('Bengal','large','no','inside', 'short');
     var bengalPoints = bengal.calculatePoints();
+
+    var domesticShorthair = new cat ('Domestic Shorthair','large','no','inside', 'short');
+    var domesticShorthairPoints = domesticShorthair.calculatePoints();
   /*  
     var germanShepherd = new cat ('German Shepherd', 'large', 'yes', 'outside', 'long');
     var germanShepherdPoints = germanShepherd.calculatePoints();
@@ -98,28 +101,33 @@ function restart(){
 
 function resetBtns(){
     total = 0;
-//question 1
+
+//Need What is your budget, low, medium or high
+
+
+
+    //question 1  What SIZE
     var radioList = document.getElementsByName("q1");
     for (var i = 0; i < radioList.length; i++) {
         if(radioList[i].checked) {
             radioList[i].checked = false;
         }
     }
-//question 2
+//question 2  Would you like an ACTIVE cat 
     var radioList2 = document.getElementsByName("q2");
     for (var i = 0; i < radioList2.length; i++) {
         if(radioList2[i].checked) {
             radioList2[i].checked = false;
         }
     }
-//question 3
-    var radioList3 = document.getElementsByName("q3");
+//question 3 Inside, Outside or Both
+    var radioList3 = document.getElementsByName("q3");With
     for (var i = 0; i < radioList3.length; i++) {
         if(radioList3[i].checked) {
             radioList3[i].checked = false;
         }
     }
-//question 4
+//question 4: Short hair, or Long
     var radioList4 = document.getElementsByName("q4");
     for (var i = 0; i < radioList4.length; i++) {
         if(radioList4[i].checked) {
@@ -178,6 +186,16 @@ function result(){
         finalLink.href ="https://www.akc.org/cat-breeds/french-bullcat/";
         finalLink.textContent = "bengal"
     }
+    else if (total === germanShepherdPoints) {
+        finalLink.href ="https://www.akc.org/cat-breeds/german-shepherd-cat/";
+        finalLink.textContent = "German Shepherd"
+    }
+ /*
+    else if (total === germanShepherdPoints) {
+        finalLink.href ="https://www.akc.org/cat-breeds/german-shepherd-cat/";
+        finalLink.textContent = "German Shepherd"
+    }
+
 
     /*
     else if (total === germanShepherdPoints) {
