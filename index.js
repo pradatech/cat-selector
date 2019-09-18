@@ -39,7 +39,7 @@ return points;
     }
  
 
-
+//1st git commit
 
     var americanShorthair = new cat ('American Shorthair','small', 'yes', 'both', 'medium' );
     var americanShorthair = americanShorthair.calculatePoints();
