@@ -9,7 +9,7 @@ function cat (breed, build, activityLevel, inside, hair) {
     this.calculatePoints = function(){
        var points = 0;
         if(this.build === 'small'){
-            points++;
+            points++;    //looks like adds one point to make odd number
         } else {
             points += 2;
         }
@@ -49,6 +49,11 @@ return points;
 
     var domesticShorthair = new cat ('Domestic Shorthair','large','no','inside', 'short');
     var domesticShorthairPoints = domesticShorthair.calculatePoints();
+
+    var maineCoon = new cat ("Saint Bernard", 'large', 'no', 'both', 'long');
+    var maineCoonPoints = maineCoon.calculatePoints();
+
+
   /*  
     var germanShepherd = new cat ('German Shepherd', 'large', 'yes', 'outside', 'long');
     var germanShepherdPoints = germanShepherd.calculatePoints();
@@ -83,9 +88,7 @@ return points;
     var greatDane = new cat ("Great Dane", 'large', 'no', 'inside', 'short');
     var greatDanePoints = greatDane.calculatePoints();
 
-    var saintBernard = new cat ("Saint Bernard", 'large', 'no', 'both', 'long');
-    var saintBernardPoints = saintBernard.calculatePoints();
-
+ 
     var germanShorthairdePointer = new cat ("German Shorthaired Pointer", 'large', 'yes', 'outside', 'short')
     var germanShorthairedPointerPoints = germanShorthairdePointer.calculatePoints();
 
@@ -186,10 +189,11 @@ function result(){
         finalLink.href ="https://www.akc.org/cat-breeds/french-bullcat/";
         finalLink.textContent = "bengal"
     }
-    else if (total === germanShepherdPoints) {
-        finalLink.href ="https://www.akc.org/cat-breeds/german-shepherd-cat/";
-        finalLink.textContent = "German Shepherd"
+    else if (total === maineCoonPoints || total === 2222 ){
+        finalLink.href ="placeholder URL";
+        finalLink.textContent = "Maine Coon"
     }
+   
  /*
     else if (total === germanShepherdPoints) {
         finalLink.href ="https://www.akc.org/cat-breeds/german-shepherd-cat/";
