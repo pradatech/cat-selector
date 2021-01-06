@@ -10,8 +10,10 @@ function cat (breed, build, activityLevel, inside, hair) {
        var points = 0;
         if(this.build === 'small'){
             points++;    //looks like adds one point to make odd number
+            console.log(points);
         } else {
             points += 2;
+            
         }
 
         if(this.activityLevel === 'yes'){
@@ -41,8 +43,8 @@ return points;
 
 //1st git commit                      Breed                Size     Active YES/no, INSIDE/OUTDOOR/BOTH,    hair length
 
-    var americanShorthair = new cat ('American Shorthair','small', 'yes', 'both', 'medium' );
-    var americanShorthair = americanShorthair.calculatePoints();
+    var americanShorthair = new cat ('American Shorthair','small', 'yes', 'both', 'short' );
+    var americanPoints = americanShorthair.calculatePoints();
  
     var bengal = new cat ('Bengal','large','no','inside', 'short');
     var bengalPoints = bengal.calculatePoints();
@@ -50,7 +52,7 @@ return points;
     var domesticShorthair = new cat ('Domestic Shorthair','large','no','inside', 'short');
     var domesticShorthairPoints = domesticShorthair.calculatePoints();
 
-    var maineCoon = new cat ("Saint Bernard", 'large', 'no', 'both', 'long');
+    var maineCoon = new cat ("Maine Coon", 'large', 'no', 'both', 'long');
     var maineCoonPoints = maineCoon.calculatePoints();
 
 
@@ -124,7 +126,7 @@ function resetBtns(){
         }
     }
 //question 3 Inside, Outside or Both
-    var radioList3 = document.getElementsByName("q3");With
+    var radioList3 = document.getElementsByName("q3");
     for (var i = 0; i < radioList3.length; i++) {
         if(radioList3[i].checked) {
             radioList3[i].checked = false;
@@ -178,10 +180,10 @@ function result(){
      total +=2000;
     }
 
-
+    
     document.getElementById("result").classList.remove('hidden');
 
-    if (total === americanShorthair|| total >= 2122 || total <=1312) {
+    if (total === americanPoints|| total === 3111 || total ===1312) {
         finalLink.href ="http://cfa.org/Breeds/BreedsAB/AmericanShorthair.aspx";
         finalLink.textContent = "American Shorthair"
     }
@@ -193,7 +195,7 @@ function result(){
         finalLink.href ="placeholder URL";
         finalLink.textContent = "Maine Coon"
     }
-   
+    
  /*
     else if (total === germanShepherdPoints) {
         finalLink.href ="https://www.akc.org/cat-breeds/german-shepherd-cat/";
@@ -259,8 +261,8 @@ function result(){
         finalLink.textContent = "Miniature Pinscher "
      }
     */
-     resetBtns();
-    
+     
+   resetBtns();
     
     
 }
