@@ -35,9 +35,9 @@ function cat (breed, build, activityLevel, inside, hair) {
         } else {
             points += 2000;
         }         
-        
-return points;
-    }
+                
+        return points;
+            }
     }
  
 
