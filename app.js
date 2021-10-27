@@ -8,40 +8,41 @@ class cat {
     this.inside = inside;
     this.hair = hair;
 
-    this.calculatePoints = function(){
-       var points = 0;
-        if(this.build === 'small'){
-            points++;    //looks like adds one point to make odd number
-            console.log(points);
-        } else {
-            points += 2;
-            
-        }
-
-        if(this.activityLevel === 'yes'){
-            points +=10;
-        } else {
-            points += 20;
-        }
-
-        if(this.inside === 'inside'){
-            points +=100;
-        } else if(this.inside === 'outside'){
-            points +=200;
-        } else {
-            points +=300
-        }
-
-        if(this.hair === 'short'){
-            points += 1000;
-        } else {
-            points += 2000;
-        }         
+    this.calculatePoints = function()
+        {
+        var points = 0;
+            if(this.build === 'small'){
+                points++;    //looks to adds one point to make odd number
+                console.log(points);
+            } else {
+                points += 2;
                 
-        return points;
             }
-    }
- 
+
+            if(this.activityLevel === 'yes'){
+                points +=10;
+            } else {
+                points += 20;
+            }
+
+            if(this.inside === 'inside'){
+                points +=100;
+            } else if(this.inside === 'outside'){
+                points +=200;
+            } else {
+                points +=300
+            }
+
+            if(this.hair === 'short'){
+                points += 1000;
+            } else {
+                points += 2000;
+            }         
+                    
+            return points;
+        }
+}
+}
 
 //1st git commit                      Breed                Size     Active YES/no, INSIDE/OUTDOOR/BOTH,    hair length
 
@@ -158,71 +159,7 @@ function result(){
         finalLink.textContent = "Maine Coon"
     }
     
- /*
-    else if (total === germanShepherdPoints) {
-        finalLink.href ="https://www.akc.org/cat-breeds/german-shepherd-cat/";
-        finalLink.textContent = "German Shepherd"
-    }
-
-
-    /*
-    else if (total === germanShepherdPoints) {
-        finalLink.href ="https://www.akc.org/cat-breeds/german-shepherd-cat/";
-        finalLink.textContent = "German Shepherd"
-    }
-    else if (total === pugPoints) {
-        finalLink.href ="https://www.akc.org/cat-breeds/pug/";
-        finalLink.textContent = "Pug"
-    }
-    else if (total === italianGreyhoundPoints) {
-        finalLink.href ="https://www.akc.org/cat-breeds/italian-greyhound/";
-        finalLink.textContent = "Italian Greyhound"
-    }
-    else if (total === maltesePoints || total === 2321) {
-        finalLink.href ="https://www.akc.org/cat-breeds/maltese/";
-        finalLink.textContent = "Maltese"
-    }
-    else if (total === bearededColliePoints) {
-        finalLink.href ="https://www.akc.org/cat-breeds/bearded-collie/";
-        finalLink.textContent = "Bearded Collie "
-    }
-    else if (total === bullcatPoints || total ===1322 || total ===1112) {
-        finalLink.href ="https://www.akc.org/cat-breeds/bullcat/";
-        finalLink.textContent = "Bullcat "
-    }
-    else if (total === whippetPoints) {
-        finalLink.href ="https://www.akc.org/cat-breeds/whippet/";
-        finalLink.textContent = "Whippet "
-    }
-    else if (total === yorkshireTerrierPoints || total === 2211 || total === 2311) {
-        finalLink.href ="https://www.akc.org/cat-breeds/yorkshire-terrier/";
-        finalLink.textContent = "YorkShire Terrier "
-    }
-    else if (total === ratTerrierPoints || total === 1311 ) {
-        finalLink.href ="https://www.akc.org/cat-breeds/rat-terrier/";
-        finalLink.textContent = "Rat Terrier "
-    }
-    else if (total === bermeseMountaincatPoints){
-        finalLink.href ="https://www.akc.org/cat-breeds/bernese-mountain-cat/";
-        finalLink.textContent = "Bermese Mountain cat "
-    } 
-    else if (total === greatDanePoints || total === 1222){
-        finalLink.href ="https://www.akc.org/cat-breeds/great-dane/";
-        finalLink.textContent = "Great Dane "
-    } 
-    else if (total === saintBernardPoints || total === 2222 ){
-        finalLink.href ="https://www.akc.org/cat-breeds/st-bernard/";
-        finalLink.textContent = "Saint Bernard "
-    }
-    else if (total === germanShorthairedPointerPoints || total ===1312) {
-        finalLink.href ="https://www.akc.org/cat-breeds/german-shorthaired-pointer/";
-        finalLink.textContent = "German Shorthaired Pointer "
-     }
-    else if (total === miniaturePinscherPoints || total === 1321 ) {
-        finalLink.href ="https://www.akc.org/cat-breeds/miniature-pinscher/";
-        finalLink.textContent = "Miniature Pinscher "
-     }
-    */
+ 
      
    resetBtns();
     
